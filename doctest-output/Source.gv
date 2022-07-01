@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Okolica:lokalizacja przy samej plaży <= 0.5\nsquared_error = 1720875.328\nsamples = 1037\nvalue = 2991.24"] ;
+1 [label="Kuchnia:wspólna kuchnia <= 0.5\nsquared_error = 1418409.806\nsamples = 890\nvalue = 2798.574"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Łazienka:suszarka do włosów <= 0.5\nsquared_error = 1300994.512\nsamples = 723\nvalue = 3007.402"] ;
+1 -> 2 ;
+3 [label="(...)"] ;
+2 -> 3 ;
+6 [label="(...)"] ;
+2 -> 6 ;
+9 [label="Pomieszczenia ogólnodostępne:wspólny salon / sala TV <= 0.5\nsquared_error = 920564.118\nsamples = 167\nvalue = 1894.485"] ;
+1 -> 9 ;
+10 [label="(...)"] ;
+9 -> 10 ;
+13 [label="(...)"] ;
+9 -> 13 ;
+16 [label="2 basenów:Wstęp dla osób w każdym wieku <= 0.5\nsquared_error = 1966710.133\nsamples = 147\nvalue = 4157.721"] ;
+0 -> 16 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+17 [label="Ogólne:winda <= 0.5\nsquared_error = 1800715.145\nsamples = 139\nvalue = 4041.835"] ;
+16 -> 17 ;
+18 [label="(...)"] ;
+17 -> 18 ;
+21 [label="(...)"] ;
+17 -> 21 ;
+24 [label="2 basenów:Godziny pracy <= 0.5\nsquared_error = 563233.438\nsamples = 8\nvalue = 6171.25"] ;
+16 -> 24 ;
+25 [label="(...)"] ;
+24 -> 25 ;
+28 [label="(...)"] ;
+24 -> 28 ;
+}
